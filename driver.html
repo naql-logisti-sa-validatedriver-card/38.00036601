@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تفاصيل بطاقة السائق</title>
+<style>
+    body {
+        margin: 0;
+        padding: 40px 0; /* مسافة علوية وسفلية */
+        font-family: "Tahoma", sans-serif;
+        background-color: #f5f7f8; /* لون الخلفية الرمادي */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .top-header {
+        width: 85%; /* محاذاة مع عرض البطاقة في الجوال */
+        max-width: 500px;
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    .top-header span {
+        color: #00766c;
+        font-size: 14px;
+    }
+
+    /* الحاوية البيضاء - جعلها نحيفة لتظهر الخلفية حولها */
+    .main-container {
+        background-color: #ffffff;
+        width: 85%; /* لتظهر الخلفية من الجوانب في الجوال */
+        max-width: 500px; /* أقصى عرض للبطاقة لتبقى نحيفة على الشاشات الكبيرة */
+        border-radius: 20px;
+        padding: 40px 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        box-sizing: border-box;
+    }
+
+    .section {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #1a1a1a;
+        margin-bottom: 25px;
+        text-align: right;
+    }
+
+    .info-group {
+        margin-bottom: 25px;
+        text-align: right;
+    }
+
+    .info-group .label {
+        color: #8e949e;
+        font-size: 13px;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .info-group .value {
+        color: #333;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.6;
+        display: block;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #f2f2f2;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    /* تحسين العرض في الشاشات الصغيرة جداً */
+    @media (max-width: 350px) {
+        .main-container {
+            width: 90%;
+            padding: 30px 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="top-header">
+        <span>تفاصيل بطاقة السائق</span>
+    </div>
+
+    <div class="main-container">
+        
+        <div class="section">
+            <div class="section-title">بيانات المنشأة/الفرد</div>
+            
+            <div class="info-group">
+                <span class="label">الاسم</span>
+                <span class="value">شركة جسور التوصيل للخدمات اللوجستية</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">رقم هوية المنشأة</span>
+                <span class="value">7051979370</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <div class="section-title">معلومات الترخيص الرئيسي</div>
+            
+            <div class="info-group">
+                <span class="label">رقم الترخيص</span>
+                <span class="value">38/00023346</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">نوع الترخيص/النشاط</span>
+                <span class="value">نشاط النقل الخفيف للبضائع لأغراض تجارية (للغير - منشآت)</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">المدينة</span>
+                <span class="value">الرياض</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">تاريخ الإصدار</span>
+                <span class="value">1447/08/23</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">تاريخ الإنتهاء</span>
+                <span class="value">1450/09/27</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <div class="section-title">بطاقة السائق</div>
+            
+            <div class="info-group">
+                <span class="label">رقم البطاقة</span>
+                <span class="value">38.00036601</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">هوية السائق</span>
+                <span class="value">2518414012</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">الاسم الأول</span>
+                <span class="value">اسامه</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">اسم العائلة</span>
+                <span class="value">الحداد</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">تاريخ إصدار البطاقة</span>
+                <span class="value">2026-03-12</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">تاريخ إنتهاء البطاقة</span>
+                <span class="value">2027-03-14</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">نوع البطاقة</span>
+                <span class="value">نشاط النقل الخفيف للبضائع لأغراض تجارية (للغير - منشآت)</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
